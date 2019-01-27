@@ -1,0 +1,223 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* -----------------------css reset end-------------------------------- */
+body {
+  font-family: 微軟正黑體; }
+
+.wrap {
+  max-width: 1024px;
+  margin: 0 auto;
+  border: 1px solid rgba(0, 0, 0, 0.1); }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+a {
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none; }
+
+.clearFix {
+  clear: both; }
+
+/* ----------------------------all end------------------------------- */
+/* ----------------------------header start------------------------------- */
+.header {
+  font-family: 微軟正黑體;
+  padding: 50px 20px;
+  background-color: #424242; }
+  .header .headerBox, .header .resultRack {
+    width: 33.33%;
+    float: left; }
+  .header .logo {
+    width: 117px;
+    height: 117px;
+    background-image: url("../images/BMICLogo.png");
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+    margin: 0 auto; }
+  .header form {
+    display: block;
+    margin: 0 auto; }
+    .header form label {
+      font-size: 18px;
+      color: #FFD366;
+      line-height: 1.5; }
+    .header form input {
+      width: 250px;
+      height: 40px;
+      border-radius: 10px;
+      border: 2px solid #FFD366;
+      background-color: #646464;
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 24px;
+      font-family: 微軟正黑體;
+      text-indent: 5px; }
+  .header .result {
+    width: 120px;
+    height: 120px;
+    border: 1px solid #FFD366;
+    background-color: #FFD366;
+    border-radius: 50%;
+    display: block; }
+    .header .result a {
+      color: #424242;
+      display: block; }
+    .header .result h2 {
+      line-height: 120px;
+      text-align: center;
+      font-size: 24px;
+      color: #424242;
+      font-weight: bold; }
+  .header .result:hover {
+    -webkit-box-shadow: 0 0 20px #FFD366;
+    box-shadow: 0 0 20px #FFD366; }
+  .header .result:active {
+    background-color: #DEA921;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  .header .calculatedBox {
+    color: var(--calculatedCollor); }
+    .header .calculatedBox .judge {
+      margin-left: 150px;
+      margin-top: -79px;
+      font-size: 32px; }
+    .header .calculatedBox .calculated {
+      width: 120px;
+      height: 120px;
+      border: 6px solid var(--calculatedCollor);
+      border-radius: 50%;
+      display: block; }
+      .header .calculatedBox .calculated a {
+        display: block; }
+      .header .calculatedBox .calculated .loop {
+        background-color: var(--calculatedCollor);
+        border-radius: 50%;
+        border: 3px solid #424242;
+        width: 30px;
+        height: 30px;
+        margin-left: 80px;
+        margin-top: var(--loopMarginTop); }
+        .header .calculatedBox .calculated .loop img {
+          display: block;
+          margin: 0 auto;
+          margin-top: 3px; }
+        .header .calculatedBox .calculated .loop img:hover {
+          opacity: 0.5; }
+      .header .calculatedBox .calculated h2 {
+        margin-top: 35px;
+        text-align: center;
+        font-size: 32px; }
+      .header .calculatedBox .calculated p {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 5px; }
+
+/* ----------------------------header end------------------------------- */
+/* ----------------------------content start------------------------------- */
+.content {
+  padding: 40px 40px;
+  background-color: #F5F5F5; }
+  .content h2 {
+    font-size: 24px;
+    color: #424242;
+    text-align: center; }
+  .content li {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    font-size: 20px; }
+    .content li span {
+      width: 19%;
+      display: inline-block; }
+    .content li small {
+      font-size: 12px; }
+    .content li .day {
+      width: 10%;
+      text-align: right; }
+    .content li .delete {
+      width: 10%;
+      text-align: right; }
+      .content li .delete a {
+        color: #000;
+        border: 1px solid #424242;
+        border-radius: 3px;
+        padding: 1px 3px; }
+      .content li .delete a:hover {
+        opacity: 0.6; }
+  .content .recordGood {
+    border-left: 7px solid #86D73F; }
+  .content .recordOverLight {
+    border-left: 7px solid #31BAF9; }
+  .content .recordOverWeight {
+    border-left: 7px solid #FF982D; }
+  .content .recordLittleFat {
+    border-left: 7px solid #FF6C02; }
+  .content .recordMediumFat {
+    border-left: 7px solid #FF6C02; }
+  .content .recordOverFat {
+    border-left: 7px solid #FF1200; }
+  .content .recordError {
+    border-left: 7px solid gray; }
+
+/* ----------------------------content end------------------------------- */
+/* ----------------------------footer start------------------------------- */
+.footer {
+  background-color: #FFD366;
+  padding: 20px; }
+  .footer img {
+    display: block;
+    width: 55px;
+    height: 55px;
+    margin: 0 auto; }
+
+/* ----------------------------footer  end------------------------------- */
